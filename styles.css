@@ -555,6 +555,50 @@ section[id] {
     color: var(--secondary);
 }
 
+.social-section-grid {
+    align-items: stretch;
+}
+
+.social-profile-card {
+    display: block;
+    height: 100%;
+    padding: 1.75rem;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbf8f5 100%);
+    border-top: 3px solid var(--primary);
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.social-profile-card:hover,
+.social-profile-card:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-strong);
+    outline: none;
+}
+
+.social-profile-kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 0.35rem 0.75rem;
+    background: rgba(200, 168, 130, 0.14);
+    color: var(--primary);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.social-profile-card h3 {
+    margin: 1rem 0 0.75rem;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+    color: var(--secondary);
+}
+
 .photo-card {
     background: white;
     border-radius: 4px;
