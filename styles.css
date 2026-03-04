@@ -854,6 +854,13 @@ section[id] {
     outline: none;
 }
 
+.footer-section .footer-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
 .footer-badges {
     display: grid;
     gap: 0.65rem;
