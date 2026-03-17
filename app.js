@@ -2,6 +2,7 @@
     const menuToggle = document.querySelector("[data-menu-toggle]");
     const headerPanel = document.querySelector("[data-header-panel]");
     const languageSelect = document.querySelector("[data-language-select]");
+    const siteHeader = document.querySelector(".site-header");
     const storageKey = "myzilla-language";
     const whatsappNumber = "4915563532093";
 
@@ -204,10 +205,78 @@
             }
 
             event.preventDefault();
-            const topOffset = target.getBoundingClientRect().top + window.scrollY - 140;
+            const headerOffset = siteHeader ? siteHeader.offsetHeight + 16 : 100;
+            const topOffset = target.getBoundingClientRect().top + window.scrollY - headerOffset;
             window.scrollTo({ top: topOffset, behavior: "smooth" });
         });
     });
+
+    const carousel = document.querySelector("[data-carousel]");
+
+    if (carousel) {
+        const track = carousel.querySelector("[data-carousel-track]");
+        const dots = Array.from(carousel.querySelectorAll("[data-slide]"));
+        const previousButton = carousel.querySelector("[data-carousel-prev]");
+        const nextButton = carousel.querySelector("[data-carousel-next]");
+        let currentSlide = 0;
+        let startX = 0;
+        let deltaX = 0;
+
+        function setSlide(index) {
+            if (!track || !dots.length) {
+                return;
+            }
+
+            currentSlide = (index + dots.length) % dots.length;
+            track.style.transform = "translateX(" + currentSlide * -100 + "%)";
+
+            dots.forEach(function (dot, dotIndex) {
+                dot.classList.toggle("is-active", dotIndex === currentSlide);
+                dot.setAttribute("aria-current", dotIndex === currentSlide ? "true" : "false");
+            });
+        }
+
+        dots.forEach(function (dot) {
+            dot.addEventListener("click", function () {
+                const index = Number(dot.getAttribute("data-slide"));
+
+                if (!Number.isNaN(index)) {
+                    setSlide(index);
+                }
+            });
+        });
+
+        if (previousButton) {
+            previousButton.addEventListener("click", function () {
+                setSlide(currentSlide - 1);
+            });
+        }
+
+        if (nextButton) {
+            nextButton.addEventListener("click", function () {
+                setSlide(currentSlide + 1);
+            });
+        }
+
+        carousel.addEventListener("touchstart", function (event) {
+            startX = event.touches[0].clientX;
+            deltaX = 0;
+        }, { passive: true });
+
+        carousel.addEventListener("touchmove", function (event) {
+            deltaX = event.touches[0].clientX - startX;
+        }, { passive: true });
+
+        carousel.addEventListener("touchend", function () {
+            if (Math.abs(deltaX) < 45) {
+                return;
+            }
+
+            setSlide(currentSlide + (deltaX < 0 ? 1 : -1));
+        });
+
+        setSlide(0);
+    }
 
     const appointmentForm = document.getElementById("appointment-form");
 
