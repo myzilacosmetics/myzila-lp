@@ -42,7 +42,8 @@
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": "Wednesday",
                     "opens": "10:00",
-                    "closes": "20:00"
+                    "closes": "18:00",
+                    "description": "Appointments only"
                 }
             ],
             "sameAs": [
@@ -166,25 +167,8 @@
                         </div>
                     </div>
 
-                    <div class="about-image">
-                        <img
-                            src="images/myzila_coverpic.jpg"
-                            alt="Myzila Cosmetics storefront in Berlin Tempelhof">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="page-section showcase-section">
-            <div class="container">
-                <div class="showcase-layout">
-                    <div class="showcase-column showcase-carousel-column" id="gallery">
-                        <div class="section-header showcase-header">
-                            <h2 class="section-title" data-fr="À l'intérieur du salon" data-en="Inside the Salon" data-de="Einblick in den Salon">Inside the Salon</h2>
-                            <p class="section-copy" data-fr="Découvrez l'atmosphère, les espaces de soin et quelques résultats signés Myzila Cosmetics." data-en="Take a look at the atmosphere, treatment spaces, and a few details from inside Myzila Cosmetics." data-de="Entdecken Sie die Atmosphäre, die Behandlungsräume und einige Eindrücke aus dem Inneren von Myzila Cosmetics.">Take a look at the atmosphere, treatment spaces, and a few details from inside Myzila Cosmetics.</p>
-                        </div>
-
-                        <div class="carousel-shell" data-carousel>
+                    <div class="about-media">
+                        <div class="carousel-shell about-carousel" data-carousel>
                             <button class="carousel-arrow carousel-arrow-prev" type="button" data-carousel-prev aria-label="Previous slide">
                                 <span aria-hidden="true">‹</span>
                             </button>
@@ -195,6 +179,9 @@
                             <div class="carousel-viewport">
                                 <div class="carousel-track" data-carousel-track>
                                     <figure class="carousel-slide is-active">
+                                        <img src="images/myzila_coverpic.jpg" alt="Myzila Cosmetics storefront in Berlin Tempelhof">
+                                    </figure>
+                                    <figure class="carousel-slide">
                                         <img src="images/carrousel/WhatsApp Image 2026-03-04 at 14.54.54.jpeg" alt="Salon styling chairs and mirrors inside Myzila Cosmetics">
                                     </figure>
                                     <figure class="carousel-slide">
@@ -246,48 +233,51 @@
                                 <button class="carousel-dot" type="button" data-slide="9" aria-label="Go to slide 10"></button>
                                 <button class="carousel-dot" type="button" data-slide="10" aria-label="Go to slide 11"></button>
                                 <button class="carousel-dot" type="button" data-slide="11" aria-label="Go to slide 12"></button>
+                                <button class="carousel-dot" type="button" data-slide="12" aria-label="Go to slide 13"></button>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="showcase-column showcase-services-column" id="services">
-                        <div class="section-header showcase-header showcase-services-header">
-                            <h2 class="section-title" data-fr="Nos Services" data-en="Our Services" data-de="Unsere Leistungen">Our Services</h2>
-                            <p class="section-copy" data-fr="Choisissez l'univers qui correspond à votre besoin." data-en="Choose the service world that fits your needs." data-de="Wählen Sie den Bereich, der zu Ihrem Bedarf passt.">Choose the service world that fits your needs.</p>
-                        </div>
+        <section class="page-section showcase-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-fr="Nos Services" data-en="Our Services" data-de="Unsere Leistungen">Our Services</h2>
+                    <p class="section-copy" data-fr="Choisissez l'univers qui correspond à votre besoin." data-en="Choose the service world that fits your needs." data-de="Wählen Sie den Bereich, der zu Ihrem Bedarf passt.">Choose the service world that fits your needs.</p>
+                </div>
 
-                        <div class="grid-three showcase-services-grid">
-                            <article class="service-link-card service-card-link service-card-static">
-                                <h3 data-fr="Cosmétique" data-en="Cosmetics" data-de="Kosmetik">Cosmétique</h3>
-                                <p class="card-copy" data-fr="Soins visage, cures, routines et accompagnement peau dans un univers premium." data-en="Facial treatments, skin routines, and treatment plans in a premium setting." data-de="Gesichtsbehandlungen, Hautroutinen und Pflegepläne in einem hochwertigen Rahmen.">Soins visage, cures, routines et accompagnement peau dans un univers premium.</p>
-                            </article>
+                <div class="grid-three services-grid">
+                    <article class="service-link-card service-card-link service-card-static">
+                        <h3 data-fr="Cosmétique" data-en="Cosmetics" data-de="Kosmetik">Cosmétique</h3>
+                        <p class="card-copy" data-fr="Soins visage, cures, routines et accompagnement peau dans un univers premium." data-en="Facial treatments, skin routines, and treatment plans in a premium setting." data-de="Gesichtsbehandlungen, Hautroutinen und Pflegepläne in einem hochwertigen Rahmen.">Soins visage, cures, routines et accompagnement peau dans un univers premium.</p>
+                    </article>
 
-                            <article class="service-link-card service-card-link service-card-static">
-                                <h3 data-fr="Épilation Laser" data-en="Laser Hair Removal" data-de="Laser-Haarentfernung">Épilation Laser</h3>
-                                <p class="card-copy" data-fr="Protocoles par zone, suivi de cure et accompagnement dans la durée." data-en="Area-based protocols, treatment tracking, and long-term follow-up." data-de="Zonenprotokolle, Behandlungsverlauf und nachhaltiges Follow-up.">Protocoles par zone, suivi de cure et accompagnement dans la durée.</p>
-                            </article>
+                    <article class="service-link-card service-card-link service-card-static">
+                        <h3 data-fr="Épilation Laser" data-en="Laser Hair Removal" data-de="Laser-Haarentfernung">Épilation Laser</h3>
+                        <p class="card-copy" data-fr="Protocoles par zone, suivi de cure et accompagnement dans la durée." data-en="Area-based protocols, treatment tracking, and long-term follow-up." data-de="Zonenprotokolle, Behandlungsverlauf und nachhaltiges Follow-up.">Protocoles par zone, suivi de cure et accompagnement dans la durée.</p>
+                    </article>
 
-                            <article class="service-link-card service-card-link service-card-static">
-                                <h3 data-fr="Coiffure Afro" data-en="Afro Hair" data-de="Afro Hair">Coiffure Afro</h3>
-                                <p class="card-copy" data-fr="Coiffage protecteur, tresses, volume et entretien des cheveux texturés." data-en="Protective styling, braids, volume, and textured hair maintenance." data-de="Protective Styling, Braids, Volumen und Pflege für texturiertes Haar.">Coiffage protecteur, tresses, volume et entretien des cheveux texturés.</p>
-                            </article>
+                    <article class="service-link-card service-card-link service-card-static">
+                        <h3 data-fr="Coiffure Afro" data-en="Afro Hair" data-de="Afro Hair">Coiffure Afro</h3>
+                        <p class="card-copy" data-fr="Coiffage protecteur, tresses, volume et entretien des cheveux texturés." data-en="Protective styling, braids, volume, and textured hair maintenance." data-de="Protective Styling, Braids, Volumen und Pflege für texturiertes Haar.">Coiffage protecteur, tresses, volume et entretien des cheveux texturés.</p>
+                    </article>
 
-                            <article class="service-link-card service-card-link service-card-static">
-                                <h3 data-fr="Extension de Cils" data-en="Lash Extensions" data-de="Wimpernverlängerung">Extension de Cils</h3>
-                                <p class="card-copy" data-fr="Effets naturels ou plus denses, remplissage et design du regard." data-en="Natural or fuller effects, refills, and eye design." data-de="Natürliche oder dichtere Looks, Refills und Blickdesign.">Effets naturels ou plus denses, remplissage et design du regard.</p>
-                            </article>
+                    <article class="service-link-card service-card-link service-card-static">
+                        <h3 data-fr="Extension de Cils" data-en="Lash Extensions" data-de="Wimpernverlängerung">Extension de Cils</h3>
+                        <p class="card-copy" data-fr="Effets naturels ou plus denses, remplissage et design du regard." data-en="Natural or fuller effects, refills, and eye design." data-de="Natürliche oder dichtere Looks, Refills und Blickdesign.">Effets naturels ou plus denses, remplissage et design du regard.</p>
+                    </article>
 
-                            <article class="service-link-card service-card-link service-card-static">
-                                <h3 data-fr="Manicure Pedicure" data-en="Manicure Pedicure" data-de="Maniküre Pediküre">Manicure Pedicure</h3>
-                                <p class="card-copy" data-fr="Soins mains et pieds, finition nette et entretien premium." data-en="Hand and foot care, polished finishing, and premium upkeep." data-de="Hand- und Fußpflege, sauberes Finish und hochwertige Pflege.">Soins mains et pieds, finition nette et entretien premium.</p>
-                            </article>
+                    <article class="service-link-card service-card-link service-card-static">
+                        <h3 data-fr="Manicure Pedicure" data-en="Manicure Pedicure" data-de="Maniküre Pediküre">Manicure Pedicure</h3>
+                        <p class="card-copy" data-fr="Soins mains et pieds, finition nette et entretien premium." data-en="Hand and foot care, polished finishing, and premium upkeep." data-de="Hand- und Fußpflege, sauberes Finish und hochwertige Pflege.">Soins mains et pieds, finition nette et entretien premium.</p>
+                    </article>
 
-                            <article class="service-link-card service-card-link service-card-static">
-                                <h3 data-fr="Drainage lymphatique" data-en="Lymphatic Drainage" data-de="Lymphdrainage">Drainage lymphatique</h3>
-                                <p class="card-copy" data-fr="Un soin ciblé pour relancer la circulation, alléger les tensions et soutenir la récupération." data-en="A targeted treatment to support circulation, reduce heaviness, and help recovery." data-de="Eine gezielte Behandlung zur Unterstützung der Zirkulation, zur Entlastung und zur Regeneration.">Un soin ciblé pour relancer la circulation, alléger les tensions et soutenir la récupération.</p>
-                            </article>
-                        </div>
-                    </div>
+                    <article class="service-link-card service-card-link service-card-static">
+                        <h3 data-fr="Drainage lymphatique" data-en="Lymphatic Drainage" data-de="Lymphdrainage">Drainage lymphatique</h3>
+                        <p class="card-copy" data-fr="Un soin ciblé pour relancer la circulation, alléger les tensions et soutenir la récupération." data-en="A targeted treatment to support circulation, reduce heaviness, and help recovery." data-de="Eine gezielte Behandlung zur Unterstützung der Zirkulation, zur Entlastung und zur Regeneration.">Un soin ciblé pour relancer la circulation, alléger les tensions et soutenir la récupération.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -373,7 +363,7 @@
                         </div>
                         <div class="contact-line">
                             <strong data-fr="Horaires" data-en="Opening Hours" data-de="Öffnungszeiten">Horaires</strong>
-                            <span data-fr="Mardi - Samedi: 10:00 - 18:00<br>Mercredi: 10:00 - 20:00 (soirée)<br>Dimanche - Lundi: Fermé" data-en="Tuesday - Saturday: 10:00 - 18:00<br>Wednesday: 10:00 - 20:00 (evening appointments)<br>Sunday - Monday: Closed" data-de="Dienstag - Samstag: 10:00 - 18:00<br>Mittwoch: 10:00 - 20:00 (Abendtermine)<br>Sonntag - Montag: Geschlossen" data-i18n-mode="html">Mardi - Samedi: 10:00 - 18:00<br>Mercredi: 10:00 - 20:00 (soirée)<br>Dimanche - Lundi: Fermé</span>
+                            <span data-fr="Mardi - Samedi: 10:00 - 18:00<br>Mercredi: 10:00 - 18:00 (sur rendez-vous uniquement)<br>Dimanche - Lundi: Fermé" data-en="Tuesday - Saturday: 10:00 - 18:00<br>Wednesday: 10:00 - 18:00 (appointments only)<br>Sunday - Monday: Closed" data-de="Dienstag - Samstag: 10:00 - 18:00<br>Mittwoch: 10:00 - 18:00 (nur nach Terminvereinbarung)<br>Sonntag - Montag: Geschlossen" data-i18n-mode="html">Mardi - Samedi: 10:00 - 18:00<br>Mercredi: 10:00 - 18:00 (sur rendez-vous uniquement)<br>Dimanche - Lundi: Fermé</span>
                         </div>
                     </div>
 
@@ -497,7 +487,7 @@
                     <h3 data-fr="Contactez-nous" data-en="Contact Us" data-de="Kontakt">Contactez-nous</h3>
                     <p>Tempelhofer Damm 153<br>12099 Berlin-Tempelhof</p>
                     <p>+49 15563 532093</p>
-                    <p data-fr="Mar-Sam: 10:00-18:00<br>Mer: 10:00-20:00" data-en="Tue-Sat: 10:00-18:00<br>Wed: 10:00-20:00" data-de="Di-Sa: 10:00-18:00<br>Mi: 10:00-20:00" data-i18n-mode="html">Mar-Sam: 10:00-18:00<br>Mer: 10:00-20:00</p>
+                    <p data-fr="Mar-Sam: 10:00-18:00<br>Mer: 10:00-18:00 (RDV uniquement)<br>Dim-Lun: Fermé" data-en="Tue-Sat: 10:00-18:00<br>Wed: 10:00-18:00 (appointments only)<br>Sun-Mon: Closed" data-de="Di-Sa: 10:00-18:00<br>Mi: 10:00-18:00 (nur mit Termin)<br>So-Mo: Geschlossen" data-i18n-mode="html">Mar-Sam: 10:00-18:00<br>Mer: 10:00-18:00 (RDV uniquement)<br>Dim-Lun: Fermé</p>
                 </div>
             </div>
 
